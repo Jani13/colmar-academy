@@ -1,0 +1,501 @@
+/* universal */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #484848;
+}
+
+#main {
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a, p {
+    font-size: 1.2rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* header - deskotp */
+
+header #desktop {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    margin: auto 24px;
+    justify-content: space-between;
+}
+
+header #desktop .logo {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+header #desktop #colmar {
+    font-weight: bold;
+    color: #484848;
+}
+
+header #desktop #academy {
+    color: #484848;
+}    
+
+header #desktop nav a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: #484848;
+}
+
+/* header - mobile */
+
+header #mobile nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header #mobile img {
+    width: 32px;
+    height: auto;
+}
+
+/* header - media */
+
+@media (max-width: 480px) {
+    header #desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+    header #mobile {
+        display: none;
+    } 
+}
+
+@media (max-width: 801px)  {
+    header #desktop nav {
+        display: none;
+    }
+} /* to prevent 2-line nav */
+
+/* adv - desktop and mobile */
+
+#adv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: lightgray;
+    padding: 32px 24px;
+}
+
+#adv .container {
+    width: 60%;
+    margin-right: 24px;   
+}
+
+#adv .text {
+    width: 30%;
+}
+
+#adv .text .button {
+    background-color: #484848;
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#adv .text .button a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 801px)  {
+    #adv {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+    #adv .container {
+        width: 100%;
+        margin: 0;
+    }
+    #adv .text {
+        padding: 32px 16px;
+        width: auto;
+    }
+    #adv .text h1 {
+        margin: 0 0 32px 0;
+        font-size: 2.5rem;
+    }
+}
+
+/* intro - desktop */
+
+#intro #desktop {
+    display: flex;
+    padding: 32px 0;
+}
+
+#intro #desktop .container.left {
+    width: 60%;
+    padding: 0 24px;
+}
+
+#intro #desktop .container.left .text .quote p {
+    margin-bottom: 24px;
+}
+
+#intro #desktop .container.right {
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+}
+
+#intro #desktop .container.right .box {
+    display: flex;
+}
+
+#intro #desktop .container.right .box img {
+    padding: 16px;
+}
+
+#intro #desktop .container.right .box .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro #desktop .container.left h2, 
+#intro .container.left p {
+    margin: 0;
+}
+
+#intro #desktop .container.left img {
+    margin-bottom: 32px;
+}
+
+#intro #desktop .container.left h2 {
+    margin-bottom: 24px;
+}
+
+#intro #desktop .container.right {
+    width: 40%;
+}
+
+#intro #desktop .container.right img {
+    width: 35%;
+    height: auto;
+}
+
+#intro #desktop .container.right .text {
+    width: 65%;
+}
+
+#intro #desktop .container.right h3, 
+#intro #desktop .container.right p {
+    margin: 0 0 8px 0;
+}
+
+/* intro - mobile */
+
+#intro #mobile .container {
+    padding: 16px;
+}
+
+#intro #mobile .container .box .text {
+    padding: 0 16px 64px 16px;
+}
+
+#intro #mobile .container .box .text.guest-lecture {
+    padding: 0 16px 16px 16px;
+}
+
+/* intro - media */
+
+@media (min-width: 700px) {
+    #intro #mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    #intro #desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 961px) {
+    #intro #desktop {
+        flex-direction: column;
+        align-items: center;
+    }       
+    #intro #desktop .container.right,
+    #intro #desktop .container.left {
+        width: 70%;
+    }
+    #intro #desktop .quote {
+        margin-bottom: 24px;
+    }
+}
+
+/* courses - desktop */
+
+#courses #desktop {
+    padding: 32px 56px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#courses #desktop .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#courses #desktop .container .box {
+    background-color: whitesmoke;
+    width: 435px;
+    margin: 16px;
+}
+
+#courses #desktop .container .box .text {
+    margin: 16px;
+}
+
+#courses #desktop .container .box img {
+    height: auto;
+}
+
+#courses #desktop .container .box h3,
+#courses #desktop .container .box p {
+    margin: 0 0 8px 0;
+}
+
+#courses #desktop h2 {
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+/* courses - mobile */
+
+#courses #mobile {
+    margin: 32px 16px 16px 16px;
+}
+
+#courses #mobile .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    widtH: auto;
+}
+
+#courses #mobile .container .box {
+    width: 90%;
+    background-color: lightgrey;
+    margin-bottom: 8px;
+    padding: 16px 16px 24px 16px;
+}
+
+#courses #mobile h2 {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+#courses #mobile h3 {
+    margin: 0;
+}
+
+/* courses - media */
+
+@media (min-width: 480px) {
+    #courses #mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #courses #desktop {
+        display: none;
+    }
+}
+
+/* exhibit - desktop */
+
+#exhibit #desktop {
+    padding: 32px 0;
+}
+
+#exhibit #desktop .content {
+    display: flex;
+}
+
+#exhibit #desktop .container.left {
+    padding: 0 24px 24px 24px;
+    width: 60%;
+}
+
+#exhibit #desktop video {
+    width: 100%;
+}
+
+#exhibit #desktop .container.right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+}
+
+#exhibit #desktop .container.right .box {
+    display: flex;
+}
+
+#exhibit #desktop .container.right .box img {
+    padding: 16px;
+}
+
+#exhibit #desktop h2 {
+    text-align: center;
+    margin: 0 0 32px 0;
+}
+
+#exhibit #desktop .container.right .box .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#exhibit #desktop .container.left h2, 
+#exhibit #desktop .container.left p {
+    margin: 0;
+}
+
+#exhibit #desktop .container.left h3 {
+    margin-bottom: 8px;
+}
+
+#exhibit #desktop .container.right img {
+    width: 35%;
+    height: auto;
+}
+
+#exhibit #desktop .container.right .text {
+    width: 65%;
+}
+
+#exhibit #desktop .container.right h3, 
+#exhibit #desktop .container.right p {
+    margin: 0 0 8px 0;
+}
+
+/* exhibit - mobile */
+
+#exhibit #mobile {
+    padding: 32px 0 24px 0;
+}
+
+#exhibit #mobile h2 {
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+#exhibit #mobile .container video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* exhibit - media */
+
+@media (min-width: 700px) {
+    #exhibit #mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    #exhibit #desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1120px) {
+    #exhibit #desktop .content {
+        flex-direction: column;
+        align-items: center;
+    }       
+    #exhibit #desktop .content .container {
+        width: 80% !important; /* !important */
+        padding: 0 !important; /* !important */
+    } 
+    #exhibit #desktop .content .container.right .box {
+        display: flex;
+        width: 100%;
+    }
+    #exhibit #desktop .content .container.left .text p {
+        margin-bottom: 24px;
+    }
+}
+
+/* footer - desktop */
+
+footer #desktop {
+    height: 64px;
+    padding: 16px 24px;
+}
+
+footer #desktop p {
+    margin: 0;
+}
+
+footer #desktop span {
+    float: right;
+}
+
+footer #desktop a {
+    text-decoration: none;
+    color: #484848;
+}
+
+/* footer - mobile */
+
+footer #mobile p {
+    font-size: 1rem;
+    margin-left: 16px;
+}
+
+/* footer - media */
+
+@media only screen and (min-width: 801px) {
+    footer #mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+    footer #desktop {
+        display: none;
+    }
+}
